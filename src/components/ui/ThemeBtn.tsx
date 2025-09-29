@@ -1,5 +1,3 @@
-// components/ThemeButton.tsx
-"use client";
 import { useEffect, useState } from "react";
 import type { Theme } from "../../utils/ThemeManager";
 import ThemeManager from "../../utils/ThemeManager";
