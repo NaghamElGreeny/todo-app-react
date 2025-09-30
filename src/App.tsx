@@ -1,16 +1,23 @@
 import Footer from "./components/Layout/Footer";
 import Navbar from "./components/Layout/Navbar";
+import ToDoList from "./components/Sections/ToDoList";
 
 function App() {
-  console.log("app is ready");
   return (
-    <div className="flex flex-col min-h-screen bg-green-50/50">
+    <div className="flex flex-col h-screen">
       <Navbar />
 
-      {/* Main */}
-      <main className="flex-grow bg-white border rounded-3xl mx-3 my-6 p-4 shadow-lg">
-        {/* to-do list goes here */}
+      <main className="flex-grow flex flex-col gap-4 p-4 overflow-auto">
+        {/* Tasks Container */}
+        <ToDoList />
+
+        {/* Notes Container (future) */} 
+        {/* <section className="bg-yellow-200 rounded-lg p-4 shadow-md w-full max-w-2xl mx-auto">
+          <h2 className="font-bold mb-2">Notes</h2>
+          NotesList
+        </section> */}
       </main>
+
       <Footer />
     </div>
   );

@@ -1,27 +1,12 @@
-import { useEffect, useState } from "react";
-import type { Theme } from "../../utils/ThemeManager";
-import ThemeManager from "../../utils/ThemeManager";
+import { useTheme } from "../../hooks/useTheme";
 
 export default function ThemeButton() {
-  const themeManager = new ThemeManager();
-  const [theme, setTheme] = useState<Theme>("light");
-
-  useEffect(() => {
-    const initial = themeManager.getCurrent();
-    setTheme(initial);
-    themeManager.apply(initial);
-  }, []);
-
-  const handleToggle = () => {
-    const newTheme = themeManager.toggle(theme);
-    setTheme(newTheme);
-    themeManager.apply(newTheme);
-  };
+    const { theme, toggle } = useTheme();
 
   return (
     <button
       type="button"
-      onClick={handleToggle}
+      onClick={toggle}
       className="cursor-pointer text-xl"
       aria-label="Toggle Theme"
     >
