@@ -1,0 +1,95 @@
+// /* Light Theme */
+// :root {
+//   --color-primary: #4caf50;       
+//   --color-primary-light: #81c784; 
+//   --color-primary-dark: #388e3c;  
+
+//   --color-bg: #f9fafb;   
+//   --color-surface: #ffffff; 
+
+//   --color-text: #1f2937; 
+//   --color-text-light: #4b5563; 
+
+//   --color-border: #e5e7eb;
+// }
+
+// /* Dark Theme */
+// .dark {
+//   --color-primary: #81c784; 
+//   --color-primary-light: #a5d6a7;
+//   --color-primary-dark: #66bb6a;
+
+//   --color-bg: #06140a;      
+//   --color-surface: #19271f;  
+//   --color-text: #e5e7eb;     
+//   --color-text-light: #9ca3af; 
+
+//   --color-border: #374151;   
+// }
+
+
+/* Light Theme - Soft & Professional */
+:root {
+  /* Primary Colors - Green Palette */
+  --color-primary: #10b981;          /* Emerald Green - softer on eyes */
+  --color-primary-light: #34d399;    /* Lighter emerald */
+  --color-primary-dark: #059669;     /* Darker emerald */
+  
+  /* Background & Surface */
+  --color-bg: #f8fafc;               /* Very light gray-blue */
+  --color-surface: #ffffff;          /* Pure white */
+  --color-surface-hover: #f1f5f9;    /* For hover states */
+  
+  /* Text Colors */
+  --color-text: #1e293b;             /* Soft dark blue-gray */
+  --color-text-light: #64748b;       /* Medium gray */
+  --color-text-lighter: #94a3b8;     /* Light gray for subtle text */
+  
+  /* Border & Divider */
+  --color-border: #e2e8f0;           /* Very light gray */
+  --color-border-light: #f1f5f9;     /* Extra light for subtle borders */
+  
+  /* Feedback Colors */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Dark Theme - Comfortable & Modern */
+.dark {
+  /* Primary Colors - Softer Greens */
+  --color-primary: #34d399;          /* Brighter for better contrast */
+  --color-primary-light: #6ee7b7;    /* Even brighter for hover */
+  --color-primary-dark: #10b981;     /* Base primary */
+  
+  /* Background & Surface */
+  --color-bg: #0f172a;               /* Deep blue-gray */
+  --color-surface: #1e293b;          /* Card background */
+  --color-surface-hover: #334155;    /* Hover states */
+  
+  /* Text Colors */
+  --color-text: #f1f5f9;             /* Soft white */
+  --color-text-light: #cbd5e1;       /* Light gray */
+  --color-text-lighter: #94a3b8;     /* Subtle text */
+  
+  /* Border & Divider */
+  --color-border: #334155;           /* Medium gray */
+  --color-border-light: #475569;     /* Light borders */
+  
+  /* Feedback Colors */
+  --color-success: #34d399;
+  --color-warning: #fbbf24;
+  --color-error: #f87171;
+  --color-info: #60a5fa;
+  
+  /* Shadows - Dark mode friendly */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+}

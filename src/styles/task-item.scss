@@ -1,0 +1,101 @@
+/* Container */
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 1.5rem; /* rounded-3xl */
+  padding: 0.75rem 1rem; /* py-3 px-4 */
+  gap: 0.5rem;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Left side */
+.task-item-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* gap-3 */
+  flex: 1;
+  min-width: 0;
+}
+
+/* Task text */
+.task-item-text {
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-user-select:pink;
+  user-select: none;
+  color: var(--color-text);
+
+  &.completed {
+    text-decoration: line-through;
+    color: var(--color-text-light);
+  }
+}
+
+/* Toggle button */
+.task-toggle {
+  color: var(--color-primary);
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--color-primary-dark);
+  }
+}
+
+/* Expand button */
+.task-expand {
+  color: var(--color-text-light);
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--color-text);
+  }
+}
+
+/* Action buttons (edit/delete/save/cancel) */
+.task-action {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  button {
+    transition: color 0.2s ease;
+
+    &.edit {
+      color: var(--color-info);
+
+      &:hover {
+        color: var(--color-info-dark);
+      }
+    }
+
+    &.delete {
+      color: var(--color-error);
+
+      &:hover {
+        color: var(--color-error-dark);
+      }
+    }
+
+    &.save {
+      color: var(--color-primary);
+
+      &:hover {
+        color: var(--color-primary-dark);
+      }
+    }
+
+    &.cancel {
+      color: var(--color-text-light);
+
+      &:hover {
+        color: var(--color-text);
+      }
+    }
+  }
+}

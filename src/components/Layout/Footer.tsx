@@ -2,10 +2,10 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-white w-full py-4 lg:py-2 border-t mt-auto">
+    <footer className="footer w-full mt-auto">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-4">
         {/* Logo + Text */}
-        <div className="flex items-center gap-2 text-gray-600 text-sm text-center md:text-left">
+        <div className="flex items-center gap-2 text-center md:text-left footer-text">
           <img
             src="/to-do-list.png"
             alt="App Logo"
@@ -15,14 +15,13 @@ function Footer() {
         </div>
 
         {/* Social Icons */}
-        <div className="flex gap-5 text-gray-500 text-lg">
+        <div className="flex gap-5 footer-icons">
           <a
             href="https://github.com/NaghamElGreeny"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
             title="GitHub"
-            className="hover:text-black transition-colors"
           >
             <FaGithub />
           </a>
@@ -32,7 +31,6 @@ function Footer() {
             rel="noopener noreferrer"
             aria-label="LinkedIn"
             title="LinkedIn"
-            className="hover:text-blue-700 transition-colors"
           >
             <FaLinkedin />
           </a>
@@ -40,9 +38,7 @@ function Footer() {
       </div>
 
       {/* Copyright */}
-      <p className="text-center text-gray-400 text-xs mt-4">
-        © 2025 Nagham Elgreeny
-      </p>
+      <p className="footer-copy">© 2025 Nagham Elgreeny</p>
     </footer>
   );
 }

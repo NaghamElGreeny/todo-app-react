@@ -3,42 +3,59 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Base Theme Variables */
-:root {
-  /* Primary brand color */
-  --color-primary: #4caf50;       
-  --color-primary-light: #81c784; 
-  --color-primary-dark: #388e3c;  
+@import "./styles/theme";
 
-  /* Backgrounds */
-  --color-bg: #f9fafb;   
-  --color-surface: #ffffff; 
-
-  /* Text */
-  --color-text: #1f2937; 
-  --color-text-light: #4b5563; 
-  /* Borders */
-  --color-border: #e5e7eb;
-}
-
-/* Dark Theme Overrides */
-.dark {
-  --color-primary: #81c784; 
-  --color-primary-light: #a5d6a7;
-  --color-primary-dark: #66bb6a;
-
-  --color-bg: #111827;      
-  --color-surface: #1f2937;  
-  --color-text: #f3f4f6;     
-  --color-text-light: #9ca3af; 
-
-  --color-border: #374151;   
-}
-
-/* Example global usage */
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: system-ui, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+
+  .navbar-title {
+    color: var(--color-text);
+  }
+
+  .navbar-icon {
+    color: var(--color-text-light);
+  }
+}
+
+
+/* Footer */
+.footer {
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  padding: 1rem 0;
+
+  .footer-text {
+    color: var(--color-text-light);
+    font-size: 0.875rem; /* text-sm */
+  }
+
+  .footer-icons {
+    color: var(--color-text-light);
+    font-size: 1.125rem; /* text-lg */
+
+    a {
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: var(--color-text);
+      }
+    }
+  }
+
+  .footer-copy {
+    color: var(--color-border);
+    font-size: 0.75rem; /* text-xs */
+    margin-top: 1rem;
+    text-align: center;
+  }
 }
