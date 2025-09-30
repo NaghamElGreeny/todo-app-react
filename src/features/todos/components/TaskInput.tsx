@@ -31,7 +31,7 @@ export default function TaskInput({ onAdd }: TaskInputProps) {
               <Field
                 name="title"
                 placeholder="Add new task..."
-                className="task-input flex-1"
+                className="task-input flex-1 w-full"
               />
               <button
                 type="submit"
